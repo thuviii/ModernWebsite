@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Varela Round', sans-serif;
     color: #fff;
+    cursor: url(cursor/mouse_cursor.png), pointer;
 }
 
 header{
@@ -73,7 +74,6 @@ nav{
     border: 1px #fff solid;
     padding: 18px;
     margin-top: 40px;
-    cursor: pointer;
     transition: 0.5s;
 }
 
