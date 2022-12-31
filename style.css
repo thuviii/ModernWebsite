@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(9, 7, 30, 0.7), rgba(9, 7, 30, 0.7)), url(img/headerimg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav img{
+    width: 200px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-right: 2%;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 18px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+}
+
+.nav-links ul li ::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: 0.7s;
+    margin: auto;
+}
+
+.nav-links ul li :hover::after{
+    width: 100%;
+}
+
+.header-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-text p{
+    padding-top: 20px;
+}
+
+.header-btn{
+    background: transparent;
+    border: 1px #fff solid;
+    padding: 18px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header-btn:hover{
+    background-color: #fff;
+    color: #222;
+}
